@@ -29,9 +29,9 @@
           <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
         </div>
         <span>or use your email for registration</span>
-        <input type="text" name="name" placeholder="Name">
-        <input type="email" name="email" placeholder="Email">
-        <input type="password" name="password" placeholder="Password">
+        <input type="text" name="name" placeholder="Name" id="signUp_name">
+        <input type="email" name="email" placeholder="Email" id="signUp_email">
+        <input type="password" name="password" placeholder="Password" id="signUp_password">
         <button>SignUp</button>
       </form>
       </div>
@@ -44,11 +44,11 @@
           <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
         </div>
         <span>or use your account</span>
-        <input type="email" name="email" placeholder="Email">
-        <input type="password" name="password" placeholder="Password">
+        <input type="email" name="email" placeholder="Email" id="signIn_email">
+        <input type="password" name="password" placeholder="Password" id ="signIn_password">
         <a href="#">Forgot Password?</a>
       
-        <button>Sign In</button>
+        <button onclick="location.href='home.html'" type="button">Sign In</button>
         </form>
       </div>
       <div class="overlay-container">
@@ -65,7 +65,7 @@
           </div>
         </div>
       </div>
-      </div>
+    </div>
       
       <script type="text/javascript">
         const signUpButton = document.getElementById('signUp');
