@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Security Whale</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/7.14.2/firebase-app.js"></script>
     <!-- include only the Firebase features as you need -->
@@ -15,69 +16,28 @@
     <script defer src="/__/firebase/7.14.2/firebase-storage.js"></script>
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
-
+    
   </head>
   <body>
-    <div class="container" id="container">
-      <div class="form-container sign-up-container">
-      
-      <form action="">
-        <h1>Create Account</h1>
-        <div class="social-container">
-          <a href="#" class="social"><i class="fa fa-facebook"></i></a>
-          <a href="#" class="social"><i class="fa fa-google"></i></a>
-          <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
-        </div>
-        <span>or use your email for registration</span>
-        <input type="text" name="name" placeholder="Name" id="signUp_name">
-        <input type="email" name="email" placeholder="Email" id="signUp_email">
-        <input type="password" name="password" placeholder="Password" id="signUp_password">
-        <button>SignUp</button>
-      </form>
-      </div>
-      <div class="form-container sign-in-container">
-        <form action="#">
-          <h1>Sign In</h1>
-          <div class="social-container">
-          <a href="#" class="social"><i class="fa fa-facebook"></i></a>
-          <a href="#" class="social"><i class="fa fa-google"></i></a>
-          <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
-        </div>
-        <span>or use your account</span>
-        <input type="email" name="email" placeholder="Email" id="signIn_email">
-        <input type="password" name="password" placeholder="Password" id ="signIn_password">
-        <a href="#">Forgot Password?</a>
-      
-        <button onclick="location.href='home.html' type="button">Sign In</button>
-        </form>
-      </div>
-      <div class="overlay-container">
-        <div class="overlay">
-          <div class="overlay-panel overlay-left">
-            <h1>Security Whale</h1>
-            <p>Connect with us by creating an account</p>
-            <button class="ghost" id="signIn">Sign In</button>
-          </div>
-          <div class="overlay-panel overlay-right">
-            <h1>Hello, User!</h1>
-            <p>Enter your details and start checking for safer code</p>
-            <button class="ghost" id="signUp">Sign Up</button>
-          </div>
-        </div>
-      </div>
+    <div class="sidebar">
+      <header>Welcome</header>
+      <a href="#" class="active">
+        <i class="fas fa-qrcode"></i>
+        <span>Dashboard</span>
+      </a>
+      <a href="#">
+        <i class="fas fa-history"></i>
+        <span>History</span>
+      </a>
+      <a href="#">
+        <i class="fas fa-cog"></i>
+        <span>Settings</span>
+      </a>
+      <a href="about.html">
+        <i class="far fa-question-circle"></i>
+        <span>About</span>
+      </a>
     </div>
-      
-      <script type="text/javascript">
-        const signUpButton = document.getElementById('signUp');
-        const signInButton = document.getElementById('signIn');
-        const container = document.getElementById('container');
-      
-        signUpButton.addEventListener('click', () => {
-          container.classList.add("right-panel-active");
-        });
-        signInButton.addEventListener('click', () => {
-          container.classList.remove("right-panel-active");
-        });
-      </script>      
-  </body>
+</body>
 </html>
+
